@@ -9,14 +9,14 @@ public class TankModel : MonoBehaviour
     public float movementSpeed;
     public float rotationSpeed;
 
-    public TankTypes tankTypes;
+    public TankTypes tankType;
 
     public TankModel(float _movement, float _rotation, TankTypes tank, Material _color)
     {
         movementSpeed = _movement;
         rotationSpeed = _rotation;
-        tankTypes = tank;
-        color = _color;
+        tankType = tank;
+        color = _color;Debug.Log((int)tank);
     }
 
     public void SetTankController(TankController _tankController)
